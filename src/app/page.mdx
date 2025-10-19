@@ -1,0 +1,43 @@
+import { Guides } from '@/components/Guides'
+import { Resources } from '@/components/Resources'
+import { HeroPattern } from '@/components/HeroPattern'
+
+export const metadata = {
+  title: 'Ezoria School - Документация',
+  description:
+    'Учебные материалы по эзотерике и магическим практикам. Изучайте нумерологию, таро, астрологию и другие эзотерические науки.',
+}
+
+export const sections = [
+  { title: 'Guides', id: 'guides' },
+  { title: 'Разделы документации', id: 'resources' },
+]
+
+<HeroPattern />
+
+# Ezoria School
+
+Добро пожаловать в библиотеку учебных материалов Ezoria School! Здесь собраны все необходимые знания для изучения эзотерических практик и магических искусств. {{ className: 'lead' }}
+
+<div className="not-prose mt-6 mb-16 flex gap-3">
+  <Button href="/docs/arguments" arrow="right">
+    <>Начать изучение</>
+  </Button>
+  <Button href="/docs" variant="outline">
+    <>Все разделы</>
+  </Button>
+</div>
+
+## Как пользоваться документацией {{ anchor: false }}
+
+Выберите интересующий вас раздел из списка ниже и начните изучение. Материалы структурированы от простого к сложному, с практическими примерами и упражнениями. {{ className: 'lead' }}
+
+<div className="not-prose">
+  <Button href="/docs" variant="text" arrow="right">
+    <>Перейти к документации</>
+  </Button>
+</div>
+
+<Guides />
+
+<Resources />
