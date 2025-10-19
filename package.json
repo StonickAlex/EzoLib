@@ -22,6 +22,7 @@
         "@types/react-highlight-words": "^0.20.0",
         "acorn": "^8.15.0",
         "clsx": "^2.1.1",
+        "docx": "^9.5.1",
         "fast-glob": "^3.3.3",
         "flexsearch": "^0.8.205",
         "framer-motion": "^12.23.11",
