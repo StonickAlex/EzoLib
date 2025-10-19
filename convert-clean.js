@@ -50,7 +50,8 @@ function createMdxPage(folderName, title, description) {
             'Психосоматика': 'psychosomatics',
             'Стрим': 'stream',
             'Схема разговора': 'conversation-schema',
-            'Магическая работа с возражениями': 'arguments'
+            'Магическая работа с возражениями': 'arguments',
+            'Astrology ': 'astrology'
         };
 
         const url = folderMapping[folderName];
