@@ -234,25 +234,25 @@ function NavigationGroup({
 
 export const navigation: Array<NavGroup> = [
   {
-    title: 'Guides',
+    title: 'Основы',
     links: [
-      { title: 'Introduction', href: '/' },
-      { title: 'Quickstart', href: '/quickstart' },
-      { title: 'SDKs', href: '/sdks' },
-      { title: 'Authentication', href: '/authentication' },
-      { title: 'Pagination', href: '/pagination' },
-      { title: 'Errors', href: '/errors' },
-      { title: 'Webhooks', href: '/webhooks' },
+      { title: 'Главная', href: '/' },
+      { title: 'Документация', href: '/docs' },
     ],
   },
   {
-    title: 'Resources',
+    title: 'Разделы',
     links: [
-      { title: 'Contacts', href: '/contacts' },
-      { title: 'Conversations', href: '/conversations' },
-      { title: 'Messages', href: '/messages' },
-      { title: 'Groups', href: '/groups' },
-      { title: 'Attachments', href: '/attachments' },
+      { title: 'Основы магии', href: '/docs/magic-basics' },
+      { title: 'Нумерология', href: '/docs/numerology' },
+      { title: 'Таро', href: '/docs/tarot' },
+      { title: 'Астрология', href: '/docs/astrology' },
+      { title: 'Психосоматика', href: '/docs/psychosomatics' },
+      { title: 'Обряды', href: '/docs/rites' },
+      { title: 'Схема разговора', href: '/docs/conversation-schema' },
+      { title: 'Работа с возражениями', href: '/docs/arguments' },
+      { title: 'Работа с датой рождения', href: '/docs/date-birth' },
+      { title: 'Стрим', href: '/docs/stream' },
     ],
   },
 ]
@@ -261,9 +261,9 @@ export function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul role="list">
-        <TopLevelNavItem href="/">API</TopLevelNavItem>
-        <TopLevelNavItem href="#">Documentation</TopLevelNavItem>
-        <TopLevelNavItem href="#">Support</TopLevelNavItem>
+        <TopLevelNavItem href="/">Magic Lab</TopLevelNavItem>
+        <TopLevelNavItem href="/docs">Документация</TopLevelNavItem>
+        <TopLevelNavItem href="/docs/arguments">Начать изучение</TopLevelNavItem>
         {navigation.map((group, groupIndex) => (
           <NavigationGroup
             key={group.title}
@@ -271,11 +271,6 @@ export function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
             className={groupIndex === 0 ? 'md:mt-0' : ''}
           />
         ))}
-        <li className="sticky bottom-0 z-10 mt-6 min-[416px]:hidden">
-          <Button href="#" variant="filled" className="w-full">
-            Sign in
-          </Button>
-        </li>
       </ul>
     </nav>
   )
