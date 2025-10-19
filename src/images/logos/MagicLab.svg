@@ -1,0 +1,21 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Магический круг -->
+  <circle cx="16" cy="16" r="14" fill="url(#gradient)" stroke="currentColor" stroke-width="2"/>
+  
+  <!-- Звезда в центре -->
+  <path d="M16 6L18.5 13.5L26 13.5L20 18L22.5 25.5L16 20.5L9.5 25.5L12 18L6 13.5L13.5 13.5L16 6Z" fill="currentColor"/>
+  
+  <!-- Магические символы по кругу -->
+  <circle cx="16" cy="4" r="1.5" fill="currentColor" opacity="0.7"/>
+  <circle cx="28" cy="16" r="1.5" fill="currentColor" opacity="0.7"/>
+  <circle cx="16" cy="28" r="1.5" fill="currentColor" opacity="0.7"/>
+  <circle cx="4" cy="16" r="1.5" fill="currentColor" opacity="0.7"/>
+  
+  <!-- Градиент -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
