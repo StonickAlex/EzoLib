@@ -1,46 +1,110 @@
-# Protocol
+# Magic Lab - Документация
 
-Protocol is a [Tailwind Plus](https://tailwindcss.com/plus) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+Учебные материалы по эзотерике и магическим практикам. Изучайте нумерологию, таро, астрологию и другие эзотерические науки.
 
-## Getting started
+## 🚀 Развертывание на Railway
 
-To get started with this template, first install the npm dependencies:
+### Автоматический деплой
+
+1. **Подключите GitHub репозиторий к Railway:**
+   - Зайдите на [railway.app](https://railway.app)
+   - Нажмите "New Project"
+   - Выберите "Deploy from GitHub repo"
+   - Выберите ваш репозиторий
+
+2. **Railway автоматически:**
+   - Определит, что это Next.js проект
+   - Установит зависимости (`npm install`)
+   - Соберет проект (`npm run build`)
+   - Запустит сервер (`npm start`)
+
+### Ручной деплой
+
+Если у вас есть Railway CLI:
 
 ```bash
+# Установите Railway CLI
+npm install -g @railway/cli
+
+# Войдите в аккаунт
+railway login
+
+# Инициализируйте проект
+railway init
+
+# Деплой
+railway up
+```
+
+## 🛠️ Локальная разработка
+
+```bash
+# Установка зависимостей
 npm install
-```
 
-Next, run the development server:
-
-```bash
+# Запуск в режиме разработки
 npm run dev
+
+# Сборка для продакшена
+npm run build
+
+# Запуск продакшен версии
+npm start
 ```
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+## 📁 Структура проекта
 
-## Customizing
+```
+src/
+├── app/                 # Next.js App Router
+│   ├── docs/           # Документация
+│   │   ├── magic-basics/    # Основы магии
+│   │   ├── numerology/      # Нумерология
+│   │   ├── tarot/          # Таро
+│   │   ├── astrology/      # Астрология
+│   │   ├── psychosomatics/ # Психосоматика
+│   │   └── ...
+│   ├── page.mdx        # Главная страница
+│   └── layout.tsx      # Основной layout
+├── components/         # React компоненты
+│   ├── Code.tsx        # Компоненты для кода
+│   ├── Tag.tsx         # Теги
+│   ├── Button.tsx      # Кнопки
+│   └── ...
+└── styles/            # Стили
+    └── tailwind.css   # Tailwind CSS
+```
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+## 🎨 Технологии
 
-## Global search
+- **Next.js 15** - React фреймворк
+- **Tailwind CSS** - CSS фреймворк
+- **MDX** - Markdown с JSX
+- **TypeScript** - Типизация
+- **Framer Motion** - Анимации
 
-This template includes a global search that's powered by the [FlexSearch](https://github.com/nextapps-de/flexsearch) library. It's available by clicking the search input or by using the `⌘K` shortcut.
+## 📝 Контент
 
-This feature requires no configuration, and works out of the box by automatically scanning your documentation pages to build its index. You can adjust the search parameters by editing the `/src/mdx/search.mjs` file.
+Все учебные материалы находятся в папке `src/app/docs/` и организованы по разделам:
 
-## License
+- **Основы магии** - базовые принципы и практики
+- **Нумерология** - работа с числами и датами
+- **Таро** - гадание на картах
+- **Астрология** - влияние планет и звезд
+- **Психосоматика** - связь тела и души
+- **Обряды** - ритуалы и церемонии
+- **Схемы разговоров** - структурированные диалоги
+- **Работа с возражениями** - техники убеждения
+- **Стрим** - материалы для стримов
 
-This site template is a commercial product and is licensed under the [Tailwind Plus license](https://tailwindcss.com/plus/license).
+## 🔧 Настройка
 
-## Learn more
+Проект настроен для автоматического деплоя на Railway. Все необходимые файлы конфигурации уже созданы:
 
-To learn more about the technologies used in this site template, see the following resources:
+- `railway.json` - конфигурация Railway
+- `.railwayignore` - файлы для игнорирования
+- `package.json` - зависимости и скрипты
 
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [Framer Motion](https://www.framer.com/docs/) - the official Framer Motion documentation
-- [MDX](https://mdxjs.com/) - the official MDX documentation
-- [Algolia Autocomplete](https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/what-is-autocomplete/) - the official Algolia Autocomplete documentation
-- [FlexSearch](https://github.com/nextapps-de/flexsearch) - the official FlexSearch documentation
-- [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) - the official Zustand documentation
+## 📞 Поддержка
+
+Для вопросов и поддержки обращайтесь через наши каналы связи.
