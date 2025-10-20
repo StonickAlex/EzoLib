@@ -31,7 +31,7 @@ const slugify = slugifyWithCounter()
 function isObjectExpression(node) {
     return (
         node.type === 'mdxTextExpression' &&
-        node.data ? .estree ? .body ? . [0] ? .expression ? .type === 'ObjectExpression'
+        node.data?.estree?.body?.[0]?.expression?.type === 'ObjectExpression'
     )
 }
 
@@ -52,7 +52,7 @@ function extractSections() {
                     let hash = node.depth === 1 ? null : slugify(content)
                     sections.push([content, hash, []])
                 } else {
-                    sections.at(-1) ? . [2].push(content)
+                    sections.at(-1)?.[2].push(content)
                 }
                 return SKIP
             }
@@ -82,7 +82,7 @@ export default function Search(nextConfig = {}) {
 
                             let sections = []
 
-                            if (cache.get(file) ? . [0] === mdx) {
+                            if (cache.get(file)?.[0] === mdx) {
                                 sections = cache.get(file)[1]
                             } else {
                                 let vfile = {
